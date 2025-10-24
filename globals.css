@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.Heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.Info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #6C727F;
+  width: 730px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Container {
+  text-align: center;
+  border: none;
+  padding: 30px;
+  border-radius: 12;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+.Email-input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: solid 2px #E5E7EB;
+  background-color: #F9FAFB;
+  color: #6C727F;
+  border-radius: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+}
+
+.Subscribe {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #284BCE;
+  color: white;
+  border-radius: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 190px;
+  padding-right: 190px;
+  margin-bottom: 30px;
+}
+
+.Email-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6C727F;
+}
